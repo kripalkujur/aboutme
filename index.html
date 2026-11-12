@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>बायोडाटा – [आपका नाम]</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --main:#7a1f3d; --soft:#fbf3f5; --text:#2b2b2b; --line:#e6d3d9; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:'Noto Sans Devanagari',sans-serif; background:#f4eef0; color:var(--text); line-height:1.6; }
+  .wrap { max-width:820px; margin:0 auto; padding:16px; }
+  .tabs { display:flex; gap:8px; margin-bottom:14px; }
+  .tab { flex:1; padding:12px; border:2px solid var(--main); background:#fff; color:var(--main);
+         font:inherit; font-weight:600; border-radius:10px; cursor:pointer; }
+  .tab.active { background:var(--main); color:#fff; }
+  .card { background:#fff; border-radius:14px; box-shadow:0 2px 12px rgba(0,0,0,.08); overflow:hidden; display:none; }
+  .card.active { display:block; }
+  header { background:var(--main); color:#fff; text-align:center; padding:22px 16px; }
+  header .om { font-size:14px; opacity:.9; }
+  header h1 { font-size:26px; margin-top:4px; }
+  header p { font-size:15px; opacity:.9; }
+  .top { display:flex; gap:18px; padding:20px; align-items:center; flex-wrap:wrap; justify-content:center; }
+  .photo { width:140px; height:170px; border:3px solid var(--main); border-radius:10px; background:var(--soft);
+           display:flex; align-items:center; justify-content:center; color:#999; font-size:13px; text-align:center; overflow:hidden; }
+  .photo img { width:100%; height:100%; object-fit:cover; }
+  .summary { flex:1; min-width:220px; }
+  .summary h2 { color:var(--main); font-size:22px; }
+  section { padding:4px 20px 16px; }
+  h3 { color:var(--main); border-bottom:2px solid var(--line); padding-bottom:4px; margin:14px 0 8px; font-size:18px; }
+  table { width:100%; border-collapse:collapse; }
+  td { padding:7px 8px; border-bottom:1px solid var(--line); vertical-align:top; font-size:15px; }
+  td:first-child { width:42%; font-weight:600; background:var(--soft); }
+  ul { padding-left:22px; font-size:15px; }
+  li { margin:4px 0; }
+  .contact { background:var(--soft); padding:16px 20px; text-align:center; font-size:15px; border-top:1px solid var(--line); }
+  .contact a { color:var(--main); font-weight:600; text-decoration:none; }
+  .btn { display:inline-block; margin:10px 4px 0; padding:9px 16px; background:var(--main); color:#fff;
+         border-radius:8px; text-decoration:none; font-weight:600; border:0; font:inherit; cursor:pointer; }
+  footer { text-align:center; font-size:12px; color:#777; padding:12px; }
+  @media print { .tabs, .btn, footer { display:none; } body { background:#fff; } .card { box-shadow:none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="tabs">
+    <button class="tab active" onclick="show('marriage',this)">💍 विवाह बायोडाटा</button>
+    <button class="tab" onclick="show('pro',this)">💼 प्रोफेशनल बायोडाटा</button>
+  </div>
+
+  <!-- ============ विवाह बायोडाटा ============ -->
+  <div class="card active" id="marriage">
+    <header>
+      <div class="om">॥ श्री गणेशाय नमः ॥</div>
+      <h1>विवाह बायोडाटा</h1>
+    </header>
+
+    <div class="top">
+      <div class="photo">
+        <!-- फोटो लगाने के लिए नीचे की लाइन से <!-- और --> हटाएँ और photo.jpg फाइल इसी फोल्डर में रखें
+        <img src="photo.jpg" alt="फोटो">
+        -->
+        [आपका फोटो]
+      </div>
+      <div class="summary">
+        <h2>[आपका पूरा नाम]</h2>
+        <p>[शिक्षा] | [व्यवसाय]</p>
+        <p>[शहर], छत्तीसगढ़</p>
+      </div>
+    </div>
+
+    <section>
+      <h3>व्यक्तिगत जानकारी</h3>
+      <table>
+        <tr><td>पूरा नाम</td><td>[नाम]</td></tr>
+        <tr><td>जन्म तिथि</td><td>[DD/MM/YYYY]</td></tr>
+        <tr><td>जन्म समय व स्थान</td><td>[समय, स्थान]</td></tr>
+        <tr><td>ऊँचाई</td><td>[5 फीट 8 इंच]</td></tr>
+        <tr><td>रंग</td><td>[गेहुँआ / गोरा]</td></tr>
+        <tr><td>धर्म / जाति</td><td>[हिन्दू / जाति]</td></tr>
+        <tr><td>गोत्र</td><td>[गोत्र]</td></tr>
+        <tr><td>रक्त समूह</td><td>[B+]</td></tr>
+        <tr><td>वैवाहिक स्थिति</td><td>अविवाहित</td></tr>
+      </table>
+
+      <h3>शिक्षा एवं व्यवसाय</h3>
+      <table>
+        <tr><td>शैक्षणिक योग्यता</td><td>[जैसे M.A., B.Ed.]</td></tr>
+        <tr><td>वर्तमान व्यवसाय</td><td>[शिक्षक, विद्यालय का नाम]</td></tr>
+        <tr><td>वार्षिक आय</td><td>[₹ ___ ]</td></tr>
+      </table>
+
+      <h3>पारिवारिक जानकारी</h3>
+      <table>
+        <tr><td>पिता का नाम</td><td>[नाम] ([व्यवसाय])</td></tr>
+        <tr><td>माता का नाम</td><td>[नाम] ([व्यवसाय])</td></tr>
+        <tr><td>भाई</td><td>[संख्या / नाम / विवाहित-अविवाहित]</td></tr>
+        <tr><td>बहन</td><td>[संख्या / नाम / विवाहित-अविवाहित]</td></tr>
+        <tr><td>पारिवारिक पृष्ठभूमि</td><td>[संयुक्त / एकल परिवार]</td></tr>
+        <tr><td>पैतृक निवास</td><td>[गाँव / शहर, जिला]</td></tr>
+      </table>
+
+      <h3>रुचियाँ</h3>
+      <ul>
+        <li>[रुचि 1]</li>
+        <li>[रुचि 2]</li>
+        <li>[रुचि 3]</li>
+      </ul>
+
+      <h3>जीवनसाथी से अपेक्षा</h3>
+      <p style="font-size:15px">[अपनी अपेक्षाएँ यहाँ लिखें – शिक्षा, स्वभाव, परिवार आदि]</p>
+    </section>
+
+    <div class="contact">
+      संपर्क: <a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a><br>
+      पता: [शहर, जिला, छत्तीसगढ़]<br>
+      <a class="btn" href="https://wa.me/91XXXXXXXXXX">WhatsApp पर संपर्क करें</a>
+      <button class="btn" onclick="window.print()">PDF / प्रिंट</button>
+    </div>
+  </div>
+
+  <!-- ============ प्रोफेशनल बायोडाटा ============ -->
+  <div class="card" id="pro">
+    <header>
+      <h1>[आपका पूरा नाम]</h1>
+      <p>[पदनाम – जैसे सहायक शिक्षक] | [विद्यालय / संस्था]</p>
+    </header>
+
+    <section>
+      <h3>परिचय</h3>
+      <p style="font-size:15px">[2–3 पंक्तियों में अपना परिचय: अनुभव, विशेषज्ञता, और आप क्या करते हैं।]</p>
+
+      <h3>कार्य अनुभव</h3>
+      <table>
+        <tr><td>[2020 – वर्तमान]</td><td><b>[पद]</b>, [विद्यालय / संस्था]<br>[मुख्य कार्य / उपलब्धि]</td></tr>
+        <tr><td>[2017 – 2020]</td><td><b>[पद]</b>, [संस्था]<br>[मुख्य कार्य / उपलब्धि]</td></tr>
+      </table>
+
+      <h3>शैक्षणिक योग्यता</h3>
+      <table>
+        <tr><td>[2018]</td><td>[डिग्री], [विश्वविद्यालय]</td></tr>
+        <tr><td>[2016]</td><td>[डिग्री], [विश्वविद्यालय]</td></tr>
+      </table>
+
+      <h3>कौशल</h3>
+      <ul>
+        <li>[कौशल 1 – जैसे पाठ्यक्रम योजना]</li>
+        <li>[कौशल 2 – जैसे शिक्षण सामग्री निर्माण]</li>
+        <li>[कौशल 3 – जैसे कंप्यूटर / डिजिटल टूल्स]</li>
+      </ul>
+
+      <h3>प्रशिक्षण एवं प्रमाणपत्र</h3>
+      <ul>
+        <li>[प्रशिक्षण / प्रमाणपत्र, वर्ष]</li>
+      </ul>
+
+      <h3>उपलब्धियाँ</h3>
+      <ul>
+        <li>[उपलब्धि 1]</li>
+        <li>[उपलब्धि 2]</li>
+      </ul>
+
+      <h3>भाषाएँ</h3>
+      <p style="font-size:15px">हिन्दी (मातृभाषा), अंग्रेज़ी, [अन्य]</p>
+    </section>
+
+    <div class="contact">
+      📞 <a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a> &nbsp;|&nbsp;
+      ✉️ <a href="mailto:aapka@email.com">aapka@email.com</a><br>
+      [शहर], छत्तीसगढ़<br>
+      <button class="btn" onclick="window.print()">PDF / प्रिंट</button>
+    </div>
+  </div>
+
+  <footer>अंतिम अपडेट: नवंबर 2026</footer>
+</div>
+
+<script>
+function show(id, btn) {
+  document.querySelectorAll('.card').forEach(c => c.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+</body>
+</html>
